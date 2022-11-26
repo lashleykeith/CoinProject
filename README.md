@@ -27,7 +27,8 @@ A detailed linux configuration using Amazon Lightsail.
 - You will get this version  `Node version 16.13.2`
 
 
-![Screenshot_1](https://user-images.githubusercontent.com/21030885/204086759-56c111cb-542b-414e-b3c6-7ba81ccd33a3.png)
+![Screenshot_1](https://user-images.githubusercontent.com/21030885/204087518-20625bcc-3fed-46d3-903a-26aa49712eec.png)
+
 
 
 
