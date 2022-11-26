@@ -17,6 +17,13 @@ A detailed linux configuration using Amazon Lightsail.
 1.  Go to `https://go.dev/doc/install` and click Mac under step 2.  Then on step 1 click Download Go for Mac or you necessary operating system.
 
 
+# Check the system
+- Now make sure you have the appropiate requirements run `docker --version`
+- You should see this version `Docker version 20.10.20` or higher
+- Run `npm -v` 
+- You will get this version  `Node version 16.13.2`
+
+
 # Run the application
 
 ## First start the backend
@@ -30,6 +37,3 @@ A detailed linux configuration using Amazon Lightsail.
 - Now run the application using the following command `npm start`
 
 - The application will now run on `http://localhost:3000`
-
-
-
