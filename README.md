@@ -25,6 +25,9 @@ A detailed linux configuration using Amazon Lightsail.
 - You should see this version `Docker version 20.10.20` or higher
 - Run `npm -v` 
 - You will get this version  `Node version 16.13.2`
+![Screenshot_1](https://user-images.githubusercontent.com/21030885/204086759-56c111cb-542b-414e-b3c6-7ba81ccd33a3.png)
+
+
 
 
 # Run the application
