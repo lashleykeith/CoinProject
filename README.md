@@ -53,14 +53,17 @@ A detailed linux configuration using Amazon Lightsail.
 
 # Install the application on AWS Lightsail
 
-# Run HTTPS
+# Run the application on HTTPS
 - go to your domain name on AWS console in Route 53
 
 - then click create record
 
 - copy the public IP address of your website.
 
-- make sure you app is running 
+- make sure your backend app is running 
 1. first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
-2. 1. first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
+
+- Then install nginx using the following commands
+- `sudo apt update -y` `sudo apt install nginx` `sudo systemctl start nginx`
+
 
