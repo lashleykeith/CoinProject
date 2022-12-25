@@ -83,6 +83,8 @@ A detailed linux configuration using Amazon Lightsail.
 ![7replaced](https://user-images.githubusercontent.com/21030885/209463809-542762ed-cb2c-4f82-bcf2-29d091113ffe.png)
 
 - Go to `location / {` and make sure the following has lines commented out like this
+![8makesureyoucommenttheselinesout](https://user-images.githubusercontent.com/21030885/209463813-09897029-9f78-499f-9b6d-093501b799bc.png)
+
 2. Make sure the frontend works
 - in the folder where the react app is run the commands `pm2 delete 0` then `pm2 start npm --name "app name" -- start`
 3. Activate the HTTPS Website
