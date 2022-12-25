@@ -87,6 +87,8 @@ Dec 23, 2022, 10:23 PM
 ReportSpam
 have delete my server now it is difficult for me to launch a new server with all packages download and run applictation with ssl but i told you with all steps with easy way
 1. create a record with domain name in route53
+![1getdomainname](https://user-images.githubusercontent.com/21030885/209463783-8d53c055-68ef-4081-b505-396ecf541d36.png)
+
 2 install nginx and start
 sudo update -y
 sudo apt-get install nginx -y
