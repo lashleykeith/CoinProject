@@ -70,4 +70,46 @@ A detailed linux configuration using Amazon Lightsail.
 - press i and scroll down to where it says `server_name _;` you are going to replace the `_;` with the domain name`bestorangesusa.com;`
 - scroll up to where it says `# First attempt to serve request as file, then` and replace it with this `proxy_pass http://localhost:3000;`
 `
+- set the `$host` variable to the domain name is it isn't already.  On the line where it says `listen 80 default server;` and `listen[::]80 default_server` replace with `listen 80;` and then `server_name bestorange.com` under that.
+- Make sure you comment these lines out like this.
+- Go to `location / {` and make sure the following has lines commented out like this
+2. Make sure the frontend works
+- in the folder where the react app is run the commands `pm2 delete 0` then `pm2 start npm --name "app name" -- start`
+3. Activate the HTTPS Website
+- restart nginx `sudo systemctl restart nginx`
+- check the website `curl https://bestorangesusa.com` and then `https://bestorangesusa.com` in the chrome browser.
+- Install snapd on server `sudo apt update`,`sudo apt install snapd`
+- Install cerbot by using these comands `sudo snap install --classic certbot`, `sudo ln -s /snap/bin/certbot /usr/bin/certbot`,  
+- Now connect domain with ssl `sudo certbot --nginx`
+- Restart Nginx `
+muhammadsoba957
+Dec 23, 2022, 10:23 PM
+ReportSpam
+have delete my server now it is difficult for me to launch a new server with all packages download and run applictation with ssl but i told you with all steps with easy way
+1. create a record with domain name in route53
+2 install nginx and start
+sudo update -y
+sudo apt-get install nginx -y
+3 open vi /etc/nginx/sites-available/default replace content like this
+server {
+listen 80;
+server_name soban.store;
 
+
+location / {
+proxy_pass http://localhost:3000;
+}
+}
+4. restart nginx
+sudo systemctl restart nginx
+5. check website on chrome like http://soban.store
+6. install snapd on server
+sudo apt update
+sudo apt install snapd
+7. install certbot by using these commands
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+8. now connect domain with ssl
+sudo certbot --nginx
+9.restart nginx `sudo systemctl restart nginx`
+10. Check the website in the browser.
