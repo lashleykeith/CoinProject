@@ -65,5 +65,6 @@ A detailed linux configuration using Amazon Lightsail.
 
 - Then install nginx using the following commands
 - `sudo apt update -y` `sudo apt install nginx` `sudo systemctl start nginx`
-
+- Open up the default document in nginx `sudo vi /etc/nginx/sites-available/default
+` you will see a document that looks like this.
 
