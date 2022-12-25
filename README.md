@@ -67,4 +67,7 @@ A detailed linux configuration using Amazon Lightsail.
 - `sudo apt update -y` `sudo apt install nginx` `sudo systemctl start nginx`
 - Open up the default document in nginx `sudo vi /etc/nginx/sites-available/default
 ` you will see a document that looks like this.
+- press i and scroll down to where it says `server_name _;` you are going to replace the `_;` with the domain name`bestorangesusa.com;`
+- scroll up to where it says `# First attempt to serve request as file, then` and replace it with this `proxy_pass http://localhost:3000;`
+`
 
