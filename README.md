@@ -46,3 +46,14 @@ A detailed linux configuration using Amazon Lightsail.
 - Now run the application using the following command `npm start`
 
 - The application will now run on `http://localhost:3000`
+
+# Install the application on AWS Lightsail
+
+# Run HTTPS
+- go to your domain name on AWS console in Route 53
+
+- then click create record
+
+- copy the public IP address of your website.
+
+- make sure you app is running first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
