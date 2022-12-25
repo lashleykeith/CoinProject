@@ -55,10 +55,13 @@ A detailed linux configuration using Amazon Lightsail.
 
 # Run the application on HTTPS
 - go to your domain name on AWS console in Route 53
+![1getdomainname](https://user-images.githubusercontent.com/21030885/209463783-8d53c055-68ef-4081-b505-396ecf541d36.png)
 
 - then click create record
+![2createcord](https://user-images.githubusercontent.com/21030885/209463789-cf4b23ea-e26f-4613-a0cf-2b82db69ffc6.png)
 
 - copy the public IP address of your website.
+![3copythepublicIP](https://user-images.githubusercontent.com/21030885/209463791-792fdcbd-5adb-4f8a-b298-7237c0daa46e.png)
 
 - make sure your backend app is running 
 1. first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
@@ -67,9 +70,12 @@ A detailed linux configuration using Amazon Lightsail.
 - `sudo apt update -y` `sudo apt install nginx` `sudo systemctl start nginx`
 - Open up the default document in nginx `sudo vi /etc/nginx/sites-available/default
 ` you will see a document that looks like this.
+![4nginx](https://user-images.githubusercontent.com/21030885/209463802-b5bcf734-795e-41f7-bcbe-65f54660bffb.png)
+
 - press i and scroll down to where it says `server_name _;` you are going to replace the `_;` with the domain name`bestorangesusa.com;`
 - scroll up to where it says `# First attempt to serve request as file, then` and replace it with this `proxy_pass http://localhost:3000;`
-`
+![5replacethiscomment](https://user-images.githubusercontent.com/21030885/209463803-c8d1daf7-4103-4ff6-9cca-9f37c7a63b16.png)
+
 - set the `$host` variable to the domain name is it isn't already.  On the line where it says `listen 80 default server;` and `listen[::]80 default_server` replace with `listen 80;` and then `server_name bestorange.com` under that.
 - Make sure you comment these lines out like this.
 - Go to `location / {` and make sure the following has lines commented out like this
@@ -87,7 +93,6 @@ Dec 23, 2022, 10:23 PM
 ReportSpam
 have delete my server now it is difficult for me to launch a new server with all packages download and run applictation with ssl but i told you with all steps with easy way
 1. create a record with domain name in route53
-![1getdomainname](https://user-images.githubusercontent.com/21030885/209463783-8d53c055-68ef-4081-b505-396ecf541d36.png)
 
 2 install nginx and start
 sudo update -y
