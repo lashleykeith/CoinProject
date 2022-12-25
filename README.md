@@ -77,7 +77,11 @@ A detailed linux configuration using Amazon Lightsail.
 ![5replacethiscomment](https://user-images.githubusercontent.com/21030885/209463803-c8d1daf7-4103-4ff6-9cca-9f37c7a63b16.png)
 
 - set the `$host` variable to the domain name is it isn't already.  On the line where it says `listen 80 default server;` and `listen[::]80 default_server` replace with `listen 80;` and then `server_name bestorange.com` under that.
+![6amkesureyouchangethissection](https://user-images.githubusercontent.com/21030885/209463804-7651dbe6-c8e2-4521-9215-b1785edf9762.png)
+
 - Make sure you comment these lines out like this.
+![7replaced](https://user-images.githubusercontent.com/21030885/209463809-542762ed-cb2c-4f82-bcf2-29d091113ffe.png)
+
 - Go to `location / {` and make sure the following has lines commented out like this
 2. Make sure the frontend works
 - in the folder where the react app is run the commands `pm2 delete 0` then `pm2 start npm --name "app name" -- start`
