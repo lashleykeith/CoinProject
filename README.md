@@ -115,15 +115,15 @@ proxy_pass http://localhost:3000;
 }
 }
 4. restart nginx
-sudo systemctl restart nginx
-5. check website on chrome like http://soban.store
+`sudo systemctl restart nginx`
+5. check website on chrome like bestorangesusa.com
 6. install snapd on server
-sudo apt update
-sudo apt install snapd
+`sudo apt update`
+`sudo apt install snapd`
 7. install certbot by using these commands
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
+`sudo snap install --classic certbot`
+`sudo ln -s /snap/bin/certbot /usr/bin/certbot`
 8. now connect domain with ssl
-sudo certbot --nginx
+`sudo certbot --nginx`
 9.restart nginx `sudo systemctl restart nginx`
 10. Check the website in the browser.
