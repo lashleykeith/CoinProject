@@ -56,4 +56,5 @@ A detailed linux configuration using Amazon Lightsail.
 
 - copy the public IP address of your website.
 
-- make sure you app is running first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
+- make sure you app is running 
+-- first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
