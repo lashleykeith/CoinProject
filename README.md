@@ -1,4 +1,8 @@
 # Ecommerce App Installation
+The website runs on HTTPS as requested and this requirement can be viewed at this address here:
+[Website](https://bestorangesusa.com/)
+However the database and backend functions will not be test at this addressed.  They can be tested however on your localhost or on your installation in your own server.
+
 A detailed linux configuration using Amazon Lightsail.
 
 ## Docker Installation
@@ -57,4 +61,6 @@ A detailed linux configuration using Amazon Lightsail.
 - copy the public IP address of your website.
 
 - make sure you app is running 
--- first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
+1. first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
+2. 1. first go to the backend folder and run the following commands `sudo docker-compose up -d` and then `sudo docker-compose -f`
+
