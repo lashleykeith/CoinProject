@@ -81,9 +81,10 @@ A detailed linux configuration using Amazon Lightsail.
 
 - Make sure you comment these lines out like this.
 ![7replaced](https://user-images.githubusercontent.com/21030885/209463809-542762ed-cb2c-4f82-bcf2-29d091113ffe.png)
+![8makesureyoucommenttheselinesout](https://user-images.githubusercontent.com/21030885/209463813-09897029-9f78-499f-9b6d-093501b799bc.png)
 
 - Go to `location / {` and make sure the following has lines commented out like this
-![8makesureyoucommenttheselinesout](https://user-images.githubusercontent.com/21030885/209463813-09897029-9f78-499f-9b6d-093501b799bc.png)
+![9makesurethattheselinesarecommentedout](https://user-images.githubusercontent.com/21030885/209463817-0fe5c57d-6741-420f-a4a0-cdd2f2930b15.png)
 
 2. Make sure the frontend works
 - in the folder where the react app is run the commands `pm2 delete 0` then `pm2 start npm --name "app name" -- start`
