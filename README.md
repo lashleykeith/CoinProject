@@ -91,6 +91,6 @@ A detailed linux configuration using Amazon Lightsail.
 - Install cerbot by using these comands `sudo snap install --classic certbot`, `sudo ln -s /snap/bin/certbot /usr/bin/certbot`,  
 - Now connect domain with ssl `sudo certbot --nginx`
 - Restart Nginx `sudo systemctl restart nginx` 
-- Check the website in the browser www.bestorangesusa.com
+- Check the website in the browser [www.bestorangesusa.com](https://bestorangesusa.com/)
 ![10](https://user-images.githubusercontent.com/21030885/209464155-4d795df2-3aa0-434e-8ded-c18515ba34b8.png)
 
