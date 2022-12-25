@@ -90,37 +90,7 @@ A detailed linux configuration using Amazon Lightsail.
 - Install snapd on server `sudo apt update`,`sudo apt install snapd`
 - Install cerbot by using these comands `sudo snap install --classic certbot`, `sudo ln -s /snap/bin/certbot /usr/bin/certbot`,  
 - Now connect domain with ssl `sudo certbot --nginx`
-- Restart Nginx `
-muhammadsoba957
-Dec 23, 2022, 10:23 PM
-ReportSpam
-have delete my server now it is difficult for me to launch a new server with all packages download and run applictation with ssl but i told you with all steps with easy way
-1. create a record with domain name in route53
+- Restart Nginx `sudo systemctl restart nginx` 
+- Check the website in the browser www.bestorangeusa.com
+![10](https://user-images.githubusercontent.com/21030885/209464155-4d795df2-3aa0-434e-8ded-c18515ba34b8.png)
 
-2 install nginx and start
-sudo update -y
-sudo apt-get install nginx -y
-3 open vi /etc/nginx/sites-available/default replace content like this
-server {
-listen 80;
-server_name soban.store;
-
-
-location / {
-proxy_pass http://localhost:3000;
-}
-}
-4. restart nginx
-`sudo systemctl restart nginx`
-5. check website on chrome like bestorangesusa.com
-6. install snapd on server
-`sudo apt update`
-`sudo apt install snapd`
-7. install certbot by using these commands
-`sudo snap install --classic certbot`
-`sudo ln -s /snap/bin/certbot /usr/bin/certbot`
-8. now connect domain with ssl
-`sudo certbot --nginx`
-9.restart nginx `sudo systemctl restart nginx`
-10. Check the website in the browser.
-=======================================================================================================================================================
