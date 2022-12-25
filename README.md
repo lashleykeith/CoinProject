@@ -33,10 +33,6 @@ A detailed linux configuration using Amazon Lightsail.
 
 ![Screenshot_1](https://user-images.githubusercontent.com/21030885/204087518-20625bcc-3fed-46d3-903a-26aa49712eec.png)
 
-
-
-
-
 # Run the application
 
 ## First start the backend
@@ -127,3 +123,4 @@ proxy_pass http://localhost:3000;
 `sudo certbot --nginx`
 9.restart nginx `sudo systemctl restart nginx`
 10. Check the website in the browser.
+=======================================================================================================================================================
